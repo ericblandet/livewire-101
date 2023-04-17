@@ -10,17 +10,21 @@
     <!-- Fonts -->
     <link href="https://fonts.bunny.net" rel="preconnect">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-
     <!-- Styles -->
-    @livewireStyles
+    @vite('resources/css/app.css')
+
 </head>
 
 <body class="antialiased">
-    <div>
-        Hello
-        @livewire('counter')
-    </div>
+
+    <h1
+        class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-center text-3xl font-semibold text-transparent">
+        HELLO
+    </h1>
+    <a href="/"><button class="rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-400">
+            🔙 </button></a>
+
 </body>
-@livewireScripts
+
 
 </html>
