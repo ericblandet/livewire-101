@@ -42,12 +42,9 @@ class ProfileForm extends Component
             'about' => $this->about,
         ];
 
-
         Profile::create($attributes);
 
         $this->successMessage = "Profile '{$this->fullname}' created  🙂!";
         $this->reset('fullname', 'email', 'about', 'phone');
-
-        return back()->with('success_message', 'Profile created 🙂!');
     }
 }
