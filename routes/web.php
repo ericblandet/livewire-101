@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/profiles/create', function () {
+    return view('create-profile');
 });
 
 Route::post('/profiles/', [ProfileController::class, 'store']);

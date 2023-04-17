@@ -1,11 +1,22 @@
 <form class="mx-auto max-w-xl" action="/profiles" method="post">
     @csrf
 
+
+
     <div class="mt-12 space-y-12">
+
         <h1
             class="bg-gr mt-12 rounded-lg border bg-gradient-to-r from-amber-300 to-pink-300 p-2 text-center text-3xl font-semibold text-slate-800">
             hello, bro'
         </h1>
+
+        @if (session('success-message'))
+            <div class="my-3 mx-auto max-w-md bg-green-300 py-1 text-center text-xs opacity-60">
+                {{ session()->get('success-message') }}
+            </div>
+        @endif
+
+
         <div class="border-b border-gray-900/10 pb-12">
             <h2 class="mb-10 text-center text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
             <div class="mt-3 sm:col-span-full">

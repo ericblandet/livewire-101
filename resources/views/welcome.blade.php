@@ -21,9 +21,15 @@
         class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-center text-3xl font-semibold text-transparent">
         HELLO
     </h1>
-    <a href="/"><button class="rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-400">
-            🔙 </button></a>
+    <div class="mt-6">
+        <a href="/"><button
+                class="ml-3 rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-400 py-2 px-6 shadow-xl hover:opacity-70 hover:shadow-md">
+                🔙 </button></a>
 
+        <a href="/profiles/create"><button
+                class="ml-3 rounded-md bg-gradient-to-tl from-emerald-400 to-cyan-400 p-2 font-medium shadow-xl hover:opacity-70 hover:shadow-md">Create
+                profile</button></a>
+    </div>
 </body>
 
 

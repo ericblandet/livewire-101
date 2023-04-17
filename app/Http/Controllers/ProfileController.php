@@ -17,6 +17,6 @@ class ProfileController extends Controller
 
         Profile::create($attributes);
 
-        return redirect('/welcome')->with('success', 'new profile added');
+        return back()->with('success-message', 'Profile created 🙂!');
     }
 }
