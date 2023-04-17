@@ -22,4 +22,5 @@ Route::get('/profiles/create', function () {
     return view('create-profile');
 });
 
+// This is not necessary anymore
 Route::post('/profiles/', [ProfileController::class, 'store']);
