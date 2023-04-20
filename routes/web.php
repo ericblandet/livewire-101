@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,5 +24,9 @@ Route::get('/profiles/create', function () {
     return view('create-profile');
 });
 
-// This is not necessary anymore
+
 Route::get('/profiles/', [ProfileController::class, 'index']);
+
+Route::get('/posts/', [PostController::class, 'index']);
+Route::get('/posts/{post:id}', [PostController::class, 'show']);
+Route::post('/posts/{post:id}/comments', [CommentController::class, 'store']);

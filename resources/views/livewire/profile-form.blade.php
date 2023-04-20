@@ -49,7 +49,7 @@
                         id="about" name="about" rows="3" wire:model.debounce500ms="about">{{ old('about') ?? 'Write a few sentences about yourself.' }}</textarea>
                 </div>
                 @error('about')
-                    <p class="text-bold mt-2 bg-red-300 py-1 pl-2 text-xs text-red-900 opacity-0">
+                    <p class="text-bold mt-2 bg-red-300 py-1 pl-2 text-xs text-red-900 opacity-70">
                         {{ $message }}</p>
                 @enderror
             </div>
