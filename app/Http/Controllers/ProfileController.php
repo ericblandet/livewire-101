@@ -23,8 +23,6 @@ class ProfileController extends Controller
 
     public function index()
     {
-        return view('livewire.paginated-table', [
-            'profiles' => Profile::paginate(5),
-        ]);
+        return view('profiles');
     }
 }
