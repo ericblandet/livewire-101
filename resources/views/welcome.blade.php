@@ -12,7 +12,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <!-- Styles -->
     @vite('resources/css/app.css')
-
+    @livewireStyles
 </head>
 
 <body class="antialiased">
@@ -30,7 +30,11 @@
                 class="ml-3 rounded-md bg-gradient-to-tl from-emerald-400 to-cyan-400 p-2 font-medium shadow-xl hover:opacity-70 hover:shadow-md">Create
                 profile</button></a>
     </div>
+    <hr class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+    @livewire('search-dropdown')
+
 </body>
 
+@livewireScripts
 
 </html>

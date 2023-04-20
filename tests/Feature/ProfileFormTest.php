@@ -51,6 +51,6 @@ class ProfileFormTest extends TestCase
             ->set('phone', '1234567890')
             ->set('about', 'Dolore')
             ->call('submitForm')
-            ->assertHasErrors(['about', 'min:10']);
+            ->assertHasErrors(['about' => 'min:10']);
     }
 }
