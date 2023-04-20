@@ -20,4 +20,11 @@ class ProfileController extends Controller
 
         return back()->with('success_message', 'Profile created 🙂!');
     }
+
+    public function index()
+    {
+        return view('livewire.paginated-table', [
+            'profiles' => Profile::paginate(5),
+        ]);
+    }
 }

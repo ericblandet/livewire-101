@@ -22,7 +22,7 @@ class SearchDropdown extends Component
             $this->searchResults = [];
         }
 
-        $response =  http::get("https://itunes.apple.com/search/?term={$this->search}&limit=10");
+        $response =  http::get("https://itunes.apple.com/search/?term={$this->search}&limit=5");
         $this->searchResults = $response->json()['results'];
         // dd($this->searchResults);
     }

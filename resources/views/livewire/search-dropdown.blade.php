@@ -38,6 +38,5 @@
                 @else
                 </ul>
             @endif
-            <pre class="mt-44">{{ count($searchResults) > 0 ? json_encode($searchResults) : '' }}</pre>
         </div>
     </div>

@@ -23,4 +23,4 @@ Route::get('/profiles/create', function () {
 });
 
 // This is not necessary anymore
-Route::post('/profiles/', [ProfileController::class, 'store']);
+Route::get('/profiles/', [ProfileController::class, 'index']);
